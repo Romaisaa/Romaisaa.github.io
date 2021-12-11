@@ -136,7 +136,7 @@ const class_name object;
 
 ## B- & Operator:
 *it has many usages depending on its syntax and this chart shows these usage with syntax:*
-<img /src="https://github.com/Romaisaa/Romaisaa.github.io/blob/main/%26%20usage%20chart.png" align="center" width="700" height="400">
+<img src="https://github.com/Romaisaa/Romaisaa.github.io/blob/main/%26%20usage%20chart.png" align="center" width="700" height="400">
 
 
 
