@@ -140,6 +140,107 @@ const class_name object;
 <img src="https://github.com/Romaisaa/Romaisaa.github.io/blob/main/%26%20usage%20chart.png" align="center" width="700" height="400">
 
  
-### ***1- Declaring a constant variable:*** 
+### ***1-  &*** 
+***i- Getting the address of a variable*** 
 
+if used at the left side of a variable, it means that the new varibale point to its location
+*Example:*
+```
+int x = 10; // declartion of variable 
+int* y = &x;  // declartion of refrence y to the variable x
+```
+
+
+
+***ii- Declaring a reference to a type:*** 
+
+```
+string& R = X; // Here, R is a reference to X    
+```
+
+***iii- Bitwise AND Operator*** 
+it's used to campare each bit of a var by logic AND
+*Eaxmple:*
+```
+int main() {  
+   int X = 14 & 42;  // where 14 is equivalant to 	0 0	1	1	1 0
+                      //  42 is equivalant to 1	0	1	0	1	0
+                      // then x is 0	0	1	0	1	0 which is eq to 10 decimal
+
+}
+```
+
+***iv- Function Overloading*** 
+There is a type of function that are decalred by word operator followed by the operator symbol 
+in this example, it's used to add 2 objects together. so, the parameters are sent y refrence.
+
+*Example:*
+```
+class Box {
+   public:
+      double getVolume(void) {
+         return length * breadth * height;
+      }
+      void setLength( double len ) {
+         length = len;
+      }
+      void setBreadth( double bre ) {
+         breadth = bre;
+      }
+      void setHeight( double hei ) {
+         height = hei;
+      }
+      
+      // Overload + operator to add two Box objects.
+      Box operator+(const Box& b) {
+         Box box;
+         box.length = this->length + b.length;
+         box.breadth = this->breadth + b.breadth;
+         box.height = this->height + b.height;
+         return box;
+      }
+   ```   
+
+      
+
+
+### ***2-  &&*** 
+
+***i- Declaring Universal References*** 
+first, we should know the difference of rvalue and lvalue in cpp. An lvalue is an expression e that may appear on the left or on the right hand side of an assignment, whereas an rvalue is an expression that can only appear on the right hand side of an assignment.
+&& is used for declaring rvalue.
+*Examples:*
+```
+template<typename T>
+void f(std::vector<T>&& param);     // “&&” means rvalue reference
+```
+```
+template<typename T>
+void f(const T&& param); 
+
+```
+
+
+
+***ii- Logic AND Operator*** 
+
+ used for expression of logical AND 
+ 
+ 
+***iii- Function Overloading*** 
+
+*Same usage as mentioned in **B.1.iv***
+
+### ***3-  &=*** 
+***i- Bitwise And*** 
+It's the same of what mention in usage of & but it only differs in its syntax.
+***Difference:***
+
+```
+x = 0 1 0 1 1 0;
+y = 1 0 1 0 0 1;
+x &= y ; 
+x = x & y  //Two expressions are both equivalnt
+
+```
 
