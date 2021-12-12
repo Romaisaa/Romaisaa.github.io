@@ -1,6 +1,7 @@
 # Const Keyword and & Operator Report
 ## A- Const Keyword: 
-<img src="/Const usage Diagram.png" align="center" width="700" height="400">
+[const]!(https://github.com/Romaisaa/Romaisaa.github.io/blob/main/Const%20usage%20Diagram.png)
+
 
 As shown in diagram const keyword has 6 different usage.
 
